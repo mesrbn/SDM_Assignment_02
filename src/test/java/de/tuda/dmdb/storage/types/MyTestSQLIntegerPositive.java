@@ -1,0 +1,21 @@
+package de.tuda.dmdb.storage.types;
+
+import org.junit.Assert;
+
+import de.tuda.dmdb.storage.types.exercise.SQLInteger;
+import de.tuda.dmdb.TestCase;
+
+public class MyTestSQLIntegerPositive extends TestCase {
+    public void testSerializeDeserialize1(){
+        // Additional test cases
+        int myValue1 = 71;
+
+        SQLInteger mySqlInt1A = new SQLInteger(myValue1);
+        byte[] myContect1 = mySqlInt1A.serialize();
+
+        SQLInteger mySqlInt1B = new SQLInteger();
+        mySqlInt1B.deserialize(myContect1);
+
+        Assert.assertEquals(mySqlInt1A.getValue(), mySqlInt1B.getValue());
+    }
+}

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="537c6c32-d12e-4c4a-822e-d9f9377eb4f7" name="Default Changelist" comment="" />
+    <list default="true" id="537c6c32-d12e-4c4a-822e-d9f9377eb4f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SDM_Assignment_02_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SDM_Assignment_02_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SDM_Assignment_02_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SDM_Assignment_02_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/de/tuda/dmdb/storage/types/exercise/SQLInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/de/tuda/dmdb/storage/types/exercise/SQLInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/de/tuda/dmdb/storage/types/MyTestSQLInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/de/tuda/dmdb/storage/types/MyTestSQLInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.kt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,14 +47,14 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="7" />
+          <entry key="java" value="10" />
           <entry key="kt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="10" />
           <entry key="Kotlin" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -46,14 +62,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="485" />
+          <entry key="java" value="535" />
           <entry key="kt" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="485" />
+          <entry key="JAVA" value="535" />
           <entry key="Kotlin" value="190" />
         </counts>
       </usages-collector>
@@ -61,19 +77,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-              <folding>
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/SQLIntegerBase.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,28 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestSuiteStorage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="136">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,10 +108,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="170">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="261">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -151,6 +151,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -207,6 +208,10 @@
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="inspectClassesForKotlinIC" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'SDM_Assignment_02'." />
@@ -279,6 +284,11 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the compilation 'test' (target  (jvm))." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'SDM_Assignment_02'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
@@ -319,6 +329,11 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the compilation 'main' (target  (jvm))." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="build" />
@@ -344,9 +359,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4617954901635" />
+        <entry key="$PROJECT_DIR$" value="4617969205742" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3519920755" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="568503720" />
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="1662278939" />
       </map>
     </option>
@@ -360,6 +375,38 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/6329582bb54b97bed5d2990a36feeffb44b6dedc/kotlin-gradle-plugin-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/3429dbf85159ee44a38a15902bc14bf2c9eebb12/kotlin-gradle-plugin-api-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/4fb59d2050abf87ee506ae7d8ed40ea422875d05/kotlin-gradle-plugin-model-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/61d1d84a4015d8c857ef9f656ddd54371fdaff22/kotlin-compiler-embeddable-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/79c7388ccc32ea656ad2ba0ad59648e805eae6f8/kotlin-annotation-processing-gradle-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/30b68b33daa4753641afb13c6c48c82e0997815d/kotlin-android-extensions-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/76fee90ed815716dbc48c29a4fa3e39a2790d35a/kotlin-compiler-runner-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/f9a05c916f3a40a1dfc740082116eb86a39ee9ab/kotlin-script-runtime-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/7b2052636fefadaacc5c63df26b23f51ad82deef/kotlin-build-common-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/2ed57a6cf733679eb22626be705c0fb96375fbb5/kotlin-daemon-client-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/a67c018fb6e117c08339fc4af53c58bcda3ea2fa/kotlin-gradle-plugin-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/85c2867b545ca6eca29c4ccc27ea8f53b24e1559/kotlin-gradle-plugin-api-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/7946fc6ced091d53733495c721136bca0797d38f/kotlin-gradle-plugin-model-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/a79f934bfbc1c7e16638da3474feab351735f1c0/kotlin-compiler-embeddable-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/9786b76a77080e76ced78e7c9165076b5eaa3467/kotlin-annotation-processing-gradle-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/bda3ee49317ef7a1e8058de61f91abe94c015538/kotlin-android-extensions-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/d0f582c6478ce8968c09993518d5be2becc3d96f/kotlin-compiler-runner-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/d5439926359caa899f41e1915b19d6d23e49750b/kotlin-script-runtime-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/7512db3b3182753bd2e48ce8d345abbadc40fe6b/kotlin-reflect-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/af164d3ca4831e384830dae658351e63f8ba57d5/kotlin-build-common-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/fea0d20d599fdd494ba8c2b2a3676f16dccce92c/kotlin-daemon-client-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -462,11 +509,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestRecord.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLInteger.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.kt" />
         <option value="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java" />
       </list>
     </option>
   </component>
@@ -617,8 +666,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTestSQLInteger">
-    <configuration name="MyTestSQLInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyTestSQLIntegerZero">
+    <configuration name="MyTestSQLIntegerNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDM_Assignment_02_test" />
       <extension name="coverage">
         <pattern>
@@ -627,7 +676,35 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage.types" />
-      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.MyTestSQLInteger" />
+      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.MyTestSQLIntegerNegative" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTestSQLIntegerPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDM_Assignment_02_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuda.dmdb.storage.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage.types" />
+      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.MyTestSQLIntegerPositive" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTestSQLIntegerZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDM_Assignment_02_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuda.dmdb.storage.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage.types" />
+      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.MyTestSQLIntegerZero" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -663,14 +740,16 @@
     <list>
       <item itemvalue="JUnit.TestSQLInteger" />
       <item itemvalue="JUnit.TestRecord" />
-      <item itemvalue="JUnit.MyTestSQLInteger" />
+      <item itemvalue="JUnit.MyTestSQLIntegerPositive" />
+      <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
+      <item itemvalue="JUnit.MyTestSQLIntegerZero" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTestSQLInteger" />
+        <item itemvalue="JUnit.MyTestSQLIntegerZero" />
+        <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
+        <item itemvalue="JUnit.MyTestSQLIntegerPositive" />
         <item itemvalue="JUnit.TestSQLInteger" />
-        <item itemvalue="JUnit.TestSQLInteger" />
-        <item itemvalue="JUnit.TestRecord" />
         <item itemvalue="JUnit.TestSQLInteger" />
       </list>
     </recent_temporary>
@@ -687,66 +766,66 @@
       <updated>1542022872106</updated>
       <workItem from="1542022875706" duration="118000" />
       <workItem from="1542023019159" duration="2526000" />
-      <workItem from="1542025581848" duration="5376000" />
+      <workItem from="1542025581848" duration="6327000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 15h 22m 37s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 21m 18s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 21m 44s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 22m 21s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 22m 52s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSQLInteger - 2018.11.12 at 16h 23m 56s.xml">
-      <configuration name="TestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSQLInteger - 2018.11.12 at 16h 27m 17s.xml">
-      <configuration name="TestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 27m 27s.xml">
-      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSQLInteger - 2018.11.12 at 16h 27m 33s.xml">
-      <configuration name="TestSQLInteger" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 27m 40s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 43m 04s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 49m 03s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSQLInteger - 2018.11.12 at 16h 49m 11s.xml">
+      <configuration name="TestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 49m 36s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 49m 47s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 49m 54s.xml">
+      <configuration name="MyTestSQLInteger" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 16h 52m 33s.xml">
+      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 16h 52m 43s.xml">
+      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTestSQLInteger - 2018.11.12 at 16h 52m 53s.xml">
       <configuration name="MyTestSQLInteger" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8020000" />
+    <option name="totallyTimeSpent" value="8971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-122" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295964" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061125" side_tool="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.3295964" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49938875" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -775,37 +854,6 @@
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestSuiteStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -820,13 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/SQLIntegerBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -834,6 +875,64 @@
           <folding>
             <element signature="e#1110#1111#0" expanded="true" />
             <element signature="e#1150#1151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/SQLIntegerBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="7" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestSuiteStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
