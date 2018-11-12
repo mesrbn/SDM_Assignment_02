@@ -28,14 +28,34 @@ public class SQLInteger extends SQLIntegerBase {
 	
 	@Override
 	public byte[] serialize() {
-		//TODO: implement this method
-		return null;
+
+		byte[] result = new byte[32];
+
+		for (int i=31; i>=0; i--) {
+			if( ((1 << i) & value) != 0) {
+				System.out.print(1);
+				result[i] = 1;
+			}
+
+			else {
+				System.out.print(0);
+				result[i] = 0;
+			}
+		}
+
+		return result;
 	}
 
 	@Override
 	public void deserialize(byte[] data) {
-		//TODO: implement this method
-		//this.value = ?;
+
+		int result = 0;
+
+		for (int i = data.length - 1; i >= 0; i--) {
+			result = result + data[i] * (int)Math.pow(2, i);
+		}
+
+		this.value = result;
 	}
 	
 	
