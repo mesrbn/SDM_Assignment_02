@@ -33,19 +33,11 @@ DEFAULT_JVM_OPTS=""
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD="maximum"
 
-<<<<<<< HEAD
 warn () {
     echo "$*"
 }
 
 die () {
-=======
-warn ( ) {
-    echo "$*"
-}
-
-die ( ) {
->>>>>>> dafc52cc348d1c0f3f5b99214841b403559ba83e
     echo
     echo "$*"
     echo
@@ -163,11 +155,7 @@ if $cygwin ; then
 fi
 
 # Escape application args
-<<<<<<< HEAD
 save () {
-=======
-save ( ) {
->>>>>>> dafc52cc348d1c0f3f5b99214841b403559ba83e
     for i do printf %s\\n "$i" | sed "s/'/'\\\\''/g;1s/^/'/;\$s/\$/' \\\\/" ; done
     echo " "
 }

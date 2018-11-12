@@ -5,10 +5,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
-<<<<<<< HEAD
-=======
-      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
->>>>>>> dafc52cc348d1c0f3f5b99214841b403559ba83e
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
