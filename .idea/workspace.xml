@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="537c6c32-d12e-4c4a-822e-d9f9377eb4f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -35,14 +34,14 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="13" />
+          <entry key="java" value="18" />
           <entry key="kt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="18" />
           <entry key="Kotlin" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -51,14 +50,14 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="595" />
+          <entry key="java" value="1183" />
           <entry key="kt" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="595" />
+          <entry key="JAVA" value="1183" />
           <entry key="Kotlin" value="190" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
@@ -67,59 +66,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerPositive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerZero.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLVarchar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/AbstractPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -496,6 +481,7 @@
         <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerZero.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java" />
       </list>
     </option>
   </component>
@@ -646,7 +632,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTestSQLIntegerZero">
+  <component name="RunManager" selected="JUnit.TestSQLVarchar">
     <configuration name="MyTestSQLIntegerNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDM_Assignment_02_test" />
       <extension name="coverage">
@@ -689,48 +675,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSQLVarchar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDM_Assignment_02_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.tuda.dmdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage" />
-      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.TestRecord" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSQLInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDM_Assignment_02_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.tuda.dmdb.*" />
+          <option name="PATTERN" value="de.tuda.dmdb.storage.types.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage.types" />
-      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.TestSQLInteger" />
+      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.TestSQLVarchar" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSQLVarchar.testSerializeDeserialize1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDM_Assignment_02_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuda.dmdb.storage.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuda.dmdb.storage.types" />
+      <option name="MAIN_CLASS_NAME" value="de.tuda.dmdb.storage.types.TestSQLVarchar" />
+      <option name="METHOD_NAME" value="testSerializeDeserialize1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestSQLInteger" />
-      <item itemvalue="JUnit.TestRecord" />
       <item itemvalue="JUnit.MyTestSQLIntegerPositive" />
       <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
       <item itemvalue="JUnit.MyTestSQLIntegerZero" />
+      <item itemvalue="JUnit.TestSQLVarchar" />
+      <item itemvalue="JUnit.TestSQLVarchar.testSerializeDeserialize1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSQLVarchar" />
+        <item itemvalue="JUnit.TestSQLVarchar.testSerializeDeserialize1" />
         <item itemvalue="JUnit.MyTestSQLIntegerZero" />
         <item itemvalue="JUnit.MyTestSQLIntegerPositive" />
         <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
-        <item itemvalue="JUnit.TestSQLInteger" />
-        <item itemvalue="JUnit.TestSQLInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -746,49 +734,50 @@
       <updated>1542022872106</updated>
       <workItem from="1542022875706" duration="118000" />
       <workItem from="1542023019159" duration="2526000" />
-      <workItem from="1542025581848" duration="7889000" />
+      <workItem from="1542025581848" duration="16334000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 17h 06m 26s.xml">
-      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 43m 03s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerPositive - 2018.11.12 at 17h 06m 41s.xml">
-      <configuration name="MyTestSQLIntegerPositive" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 43m 32s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerZero - 2018.11.12 at 17h 06m 47s.xml">
-      <configuration name="MyTestSQLIntegerZero" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar_testSerializeDeserialize1 - 2018.11.12 at 19h 47m 08s.xml">
+      <configuration name="TestSQLVarchar.testSerializeDeserialize1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 17h 06m 53s.xml">
-      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar_testSerializeDeserialize1 - 2018.11.12 at 19h 48m 13s.xml">
+      <configuration name="TestSQLVarchar.testSerializeDeserialize1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 17h 08m 00s.xml">
-      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 48m 50s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 17h 08m 21s.xml">
-      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 49m 19s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerNegative - 2018.11.12 at 17h 11m 56s.xml">
-      <configuration name="MyTestSQLIntegerNegative" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 50m 20s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerPositive - 2018.11.12 at 17h 12m 09s.xml">
-      <configuration name="MyTestSQLIntegerPositive" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 51m 41s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerPositive - 2018.11.12 at 17h 12m 32s.xml">
-      <configuration name="MyTestSQLIntegerPositive" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 53m 17s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTestSQLIntegerPositive - 2018.11.12 at 17h 13m 37s.xml">
-      <configuration name="MyTestSQLIntegerPositive" configurationId="JUnit" />
+    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 54m 18s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10533000" />
+    <option name="totallyTimeSpent" value="18978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-122" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -796,7 +785,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39910313" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -822,36 +811,6 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -862,13 +821,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,23 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,10 +880,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/MyTestSQLIntegerNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/TestRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+        <state relative-caret-position="323">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLVarchar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

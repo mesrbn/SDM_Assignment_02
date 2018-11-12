@@ -33,12 +33,10 @@ public class SQLInteger extends SQLIntegerBase {
 
 		for (int i=31; i>=0; i--) {
 			if( ((1 << i) & value) != 0) {
-				System.out.print(1);
 				result[i] = 1;
 			}
 
 			else {
-				System.out.print(0);
 				result[i] = 0;
 			}
 		}

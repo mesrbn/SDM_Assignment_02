@@ -2,6 +2,8 @@ package de.tuda.dmdb.storage.types.exercise;
 
 import de.tuda.dmdb.storage.types.SQLVarcharBase;
 
+import java.util.Arrays;
+
 /**
  * SQL varchar value
  * @author cbinnig
@@ -31,8 +33,26 @@ public class SQLVarchar extends SQLVarcharBase {
 	
 	@Override
 	public byte[] serialize() {
-		//TODO: implement this method
-		return null;
+		byte[] result = new byte[value.length() * 8];
+		int count = 0;
+		for (int index = 0; index < value.length(); index ++) {
+
+			String s = value.substring(index, index + 1);
+
+			for (int i=7; i>=0; i--) {
+				byte[] test = s.getBytes();
+				if( ((1 << i) & test[0]) != 0) {
+					result[count] = 1;
+					count ++;
+				}
+
+				else {
+					result[count] = 0;
+					count ++;
+				}
+			}
+		}
+		return result;
 	}
 
 	@Override
