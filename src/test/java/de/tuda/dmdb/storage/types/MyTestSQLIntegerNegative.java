@@ -7,7 +7,7 @@ import org.junit.Assert;
 public class MyTestSQLIntegerNegative extends TestCase {
     public void testSerializeDeserialize1(){
         // Additional test cases
-        int myValue1 = -1;
+        int myValue1 = -123456789;
 
         SQLInteger mySqlInt1A = new SQLInteger(myValue1);
         byte[] myContect1 = mySqlInt1A.serialize();

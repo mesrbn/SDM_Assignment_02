@@ -52,7 +52,7 @@ public class SQLInteger extends SQLIntegerBase {
 		int result = 0;
 
 		for (int i = data.length - 1; i >= 0; i--) {
-			result = result + data[i] * (int)Math.pow(2, i);
+			result = result + data[i] * (data[i] << i);
 		}
 
 		this.value = result;
