@@ -1,10 +1,6 @@
 package de.tuda.dmdb.storage.types.exercise;
 
 import de.tuda.dmdb.storage.types.SQLVarcharBase;
-import sun.text.normalizer.UTF16;
-
-import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 
 /**
  * SQL varchar value
