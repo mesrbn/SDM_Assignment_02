@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="537c6c32-d12e-4c4a-822e-d9f9377eb4f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -50,14 +49,14 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="1183" />
+          <entry key="java" value="1917" />
           <entry key="kt" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="1183" />
+          <entry key="JAVA" value="1917" />
           <entry key="Kotlin" value="190" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="386">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -78,14 +77,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+            <state relative-caret-position="278">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#540#541#0" expanded="true" />
                 <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -715,10 +714,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestSQLVarchar" />
+        <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
         <item itemvalue="JUnit.TestSQLVarchar.testSerializeDeserialize1" />
         <item itemvalue="JUnit.MyTestSQLIntegerZero" />
         <item itemvalue="JUnit.MyTestSQLIntegerPositive" />
-        <item itemvalue="JUnit.MyTestSQLIntegerNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -734,44 +733,44 @@
       <updated>1542022872106</updated>
       <workItem from="1542022875706" duration="118000" />
       <workItem from="1542023019159" duration="2526000" />
-      <workItem from="1542025581848" duration="16334000" />
+      <workItem from="1542025581848" duration="22526000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 43m 03s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 44m 47s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 43m 32s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 45m 39s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar_testSerializeDeserialize1 - 2018.11.12 at 19h 47m 08s.xml">
-      <configuration name="TestSQLVarchar.testSerializeDeserialize1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSQLVarchar_testSerializeDeserialize1 - 2018.11.12 at 19h 48m 13s.xml">
-      <configuration name="TestSQLVarchar.testSerializeDeserialize1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 48m 50s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 46m 11s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 49m 19s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 52m 22s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 50m 20s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 54m 14s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 51m 41s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 56m 26s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 53m 17s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 57m 28s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSQLVarchar - 2018.11.12 at 19h 54m 18s.xml">
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 01h 59m 19s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 02h 00m 23s.xml">
+      <configuration name="TestSQLVarchar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSQLVarchar - 2018.11.13 at 02h 00m 57s.xml">
       <configuration name="TestSQLVarchar" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18978000" />
+    <option name="totallyTimeSpent" value="25170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-122" width="1696" height="1026" extended-state="6" />
@@ -784,7 +783,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -810,6 +809,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/TestCase.java">
@@ -904,13 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/tuda/dmdb/storage/types/TestSQLVarchar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -918,16 +922,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tuda/dmdb/storage/types/exercise/SQLVarchar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="278">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
           </folding>
         </state>
       </provider>

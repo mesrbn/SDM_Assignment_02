@@ -1,7 +1,9 @@
 package de.tuda.dmdb.storage.types.exercise;
 
 import de.tuda.dmdb.storage.types.SQLVarcharBase;
+import sun.text.normalizer.UTF16;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /**
@@ -33,22 +35,19 @@ public class SQLVarchar extends SQLVarcharBase {
 	
 	@Override
 	public byte[] serialize() {
+		byte[] bytes = value.getBytes();
+		int index = 0;
 		byte[] result = new byte[value.length() * 8];
-		int count = 0;
-		for (int index = 0; index < value.length(); index ++) {
-
-			String s = value.substring(index, index + 1);
-
+		for (byte b : bytes) {
 			for (int i=7; i>=0; i--) {
-				byte[] test = s.getBytes();
-				if( ((1 << i) & test[0]) != 0) {
-					result[count] = 1;
-					count ++;
+				if( ((1 << i) & b) != 0) {
+					result[index] = 1;
+					index ++;
 				}
 
 				else {
-					result[count] = 0;
-					count ++;
+					result[index] = 0;
+					index ++;
 				}
 			}
 		}
@@ -58,7 +57,18 @@ public class SQLVarchar extends SQLVarcharBase {
 	@Override
 	public void deserialize(byte[] data) {
 		//TODO: implement this method
-		//this.value = ?
+		byte[] bytes = new byte[data.length / 8];
+		int byteValue = 0;
+		int j = 0;
+		for (int i = data.length -1 ; i >= 0 ; i--) {
+			byteValue = byteValue + data[i] * (data[i] << j);
+			j = (++j) % 8 ;
+			if (j == 0) {
+				bytes[i / 8] = (byte) byteValue;
+				byteValue = 0;
+			}
+		}
+		this.value = new String(bytes);
 	}
 	
 	@Override
