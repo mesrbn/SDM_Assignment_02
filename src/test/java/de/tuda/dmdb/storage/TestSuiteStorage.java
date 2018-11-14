@@ -12,6 +12,7 @@ public class TestSuiteStorage extends TestSuite
     suite.addTestSuite( TestPage.class );
     suite.addTestSuite( TestRecord.class );
     suite.addTestSuite( TestSQLInteger.class );
+    suite.addTestSuite( MyTestSQLIntegerZero.class );
     suite.addTestSuite( MyTestSQLIntegerNegative.class );
     suite.addTestSuite( MyTestSQLIntegerPositive.class );
     suite.addTestSuite( TestSQLVarchar.class );

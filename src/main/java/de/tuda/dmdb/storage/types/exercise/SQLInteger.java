@@ -2,6 +2,10 @@ package de.tuda.dmdb.storage.types.exercise;
 
 import de.tuda.dmdb.storage.types.SQLIntegerBase;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 /**
  * SQL integer value
  * @author cbinnig
@@ -28,17 +32,11 @@ public class SQLInteger extends SQLIntegerBase {
 	
 	@Override
 	public byte[] serialize() {
-
-		byte[] result = new byte[32];
-
-		for (int i=31; i>=0; i--) {
-			if( ((1 << i) & value) != 0) {
-				result[i] = 1;
-			}
-
-			else {
-				result[i] = 0;
-			}
+		byte[] result = new byte[4];
+		int mask = 0;
+		for (int i = 3; i >= 0; i--) {
+			result[i] = (byte) ((0xFF & value >>> mask));
+			mask += 8;
 		}
 
 		return result;
@@ -47,13 +45,10 @@ public class SQLInteger extends SQLIntegerBase {
 	@Override
 	public void deserialize(byte[] data) {
 
-		int result = 0;
-
-		for (int i = data.length - 1; i >= 0; i--) {
-			result = result + data[i] * (data[i] << i);
-		}
-
-		this.value = result;
+		this.value = (data[0]<<24)&0xff000000|
+					(data[1]<<16)&0x00ff0000|
+					(data[2]<< 8)&0x0000ff00|
+					(data[3]<< 0)&0x000000ff;
 	}
 	
 	
