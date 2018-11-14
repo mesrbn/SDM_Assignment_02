@@ -2,10 +2,6 @@ package de.tuda.dmdb.storage.types.exercise;
 
 import de.tuda.dmdb.storage.types.SQLIntegerBase;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-
 /**
  * SQL integer value
  * @author cbinnig

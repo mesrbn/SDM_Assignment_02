@@ -2,6 +2,9 @@ package de.tuda.dmdb.storage.exercise;
 
 import de.tuda.dmdb.storage.AbstractPage;
 import de.tuda.dmdb.storage.AbstractRecord;
+import de.tuda.dmdb.storage.types.EnumSQLType;
+import de.tuda.dmdb.storage.types.exercise.SQLInteger;
+import de.tuda.dmdb.storage.types.exercise.SQLVarchar;
 
 
 public class RowPage extends AbstractPage {
@@ -27,31 +30,42 @@ public class RowPage extends AbstractPage {
 	// otherwise throws an exception
 	public int insert(AbstractRecord record) {
 		//TODO: implement this method
-
-		int freeSpace = this.getFreeSpace();
-		int numberOfRecords = this.getNumRecords();
-		int pageNumner = this.getPageNumber();
 		boolean canFit = this.recordFitsIntoPage(record);
-		int minNumRecordsFitPage = this.estimateRecords(record);
-		int fixedLength = record.getFixedLength();
-		int varLength = record.getVariableLength();
-		int slotSize = this.slotSize;
-		byte[] rec1 = record.getValues()[0].serialize();
-		byte[] rec2 = record.getValues()[1].serialize();
+		int numberOfAttributes = record.getValues().length;
+		int index = 0;
 
-		byte[] rec = new byte[rec1.length + rec2.length];
-		System.arraycopy(rec1, 0, rec, 0, rec1.length);
-		System.arraycopy(rec2, 0, rec, rec1.length, rec2.length);
-
-
+		byte[] recInt = null;
+		byte[] recVarChar = null;
+		byte[] rec = new byte[12];
+		for (int i = 0; i < numberOfAttributes; i++) {
+			if (record.getValues()[i].getType() == EnumSQLType.SqlInteger) {
+				recInt = record.getValues()[i].serialize();
+				System.arraycopy(recInt, 0, rec, index, recInt.length);
+				index += recInt.length;
+			}
+			else if (record.getValues()[i].getType() == EnumSQLType.SqlVarchar) {
+				recVarChar = record.getValues()[i].serialize();
+				byte[] metaPart1 = new SQLInteger(this.offsetEnd).serialize();
+				System.arraycopy(metaPart1, 0, rec, index, metaPart1.length);
+				index += metaPart1.length;
+				byte[] metaPart2 = new SQLInteger(recVarChar.length).serialize();
+				System.arraycopy(metaPart2, 0, rec, index, metaPart2.length);
+				index += metaPart2.length;
+			}
+			else
+				throw new RuntimeException("not suitable data type");
+		}
 		if (canFit) {
-			System.arraycopy(rec, 0, this.data, 0, rec.length);
-			this.offset = 12;
+			System.arraycopy(rec, offset, this.data, 0, rec.length);
+			System.arraycopy(recVarChar, offset, this.data, this.offsetEnd, recVarChar.length);
+			this.offset += 12;
+			this.offsetEnd -= recVarChar.length;
 			this.numRecords++;
 		} else
 			throw new RuntimeException("There is not enough space");
 
-		return 0;
+
+		return numRecords;
 	}
 
 	@Override
@@ -59,5 +73,38 @@ public class RowPage extends AbstractPage {
 	// An Exception is thrown if the specified slot is empty.
 	public void read(int slotNumber, AbstractRecord record){
 		//TODO: implement this method
+		SQLInteger sqlInteger;
+		SQLVarchar sqlVarchar;
+		int numberOfAttributes = record.getValues().length;
+		for (int i = 0; i < numberOfAttributes; i++) {
+			if (record.getValues()[i].getType() == EnumSQLType.SqlInteger) {
+				sqlInteger = (SQLInteger) record.getValues()[i];
+				byte[] elementInt = new byte[4];
+				System.arraycopy(this.data, (slotNumber * 12) + (i*8), elementInt, 0, 4);
+				sqlInteger.deserialize(elementInt);
+			}
+			// else it is varchar
+			else {
+				sqlVarchar = (SQLVarchar) record.getValues()[i];
+				byte[] metaPart1 = new byte[4];
+				System.arraycopy(this.data, (slotNumber * 12) + (i*4), metaPart1, 0, 4);
+				byte[] metaPart2 = new byte[4];
+				System.arraycopy(this.data, (slotNumber * 12) + (i*4) + 4, metaPart2, 0, 4);
+
+				// calculate the length of the varchar
+				sqlInteger = new SQLInteger();
+				sqlInteger.deserialize(metaPart2);
+				int varCharSize = sqlInteger.getValue();
+				// calculate the offset of the varchar in page
+				sqlInteger.deserialize(metaPart1);
+				int varCharBeginAddress = sqlInteger.getValue();
+
+				byte[] elementVarChar = new byte[varCharSize];
+				System.arraycopy(this.data, varCharBeginAddress, elementVarChar, 0, varCharSize);
+				sqlVarchar.deserialize(elementVarChar);
+				SQLVarchar sv = (SQLVarchar) record.getValues()[i];
+				sv.deserialize(elementVarChar);
+			}
+		}
 	}
 }
