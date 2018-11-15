@@ -18,6 +18,9 @@ public class TestSuiteStorage extends TestSuite
     suite.addTestSuite( TestSQLVarchar.class );
     suite.addTestSuite( MyTestSQLVarcharEmpty.class );
     suite.addTestSuite( MyTestSQLVarcharLong.class );
+    suite.addTestSuite( MyTestPageNullRec.class );
+    suite.addTestSuite( MyTestPageReverseOrder.class );
+    suite.addTestSuite( MyTestPageLongRec.class );
     return suite;
   }
 }

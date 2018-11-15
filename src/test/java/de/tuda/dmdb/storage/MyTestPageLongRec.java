@@ -6,7 +6,7 @@ import de.tuda.dmdb.storage.types.exercise.SQLInteger;
 import de.tuda.dmdb.storage.types.exercise.SQLVarchar;
 import org.junit.Assert;
 
-public class MyTestPageLogRec extends TestCase {
+public class MyTestPageLongRec extends TestCase {
     public void testInsert1Record(){
         //insert record
         AbstractRecord r1 = new Record(2);

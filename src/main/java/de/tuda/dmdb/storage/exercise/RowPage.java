@@ -2,9 +2,12 @@ package de.tuda.dmdb.storage.exercise;
 
 import de.tuda.dmdb.storage.AbstractPage;
 import de.tuda.dmdb.storage.AbstractRecord;
+import de.tuda.dmdb.storage.Record;
 import de.tuda.dmdb.storage.types.EnumSQLType;
 import de.tuda.dmdb.storage.types.exercise.SQLInteger;
 import de.tuda.dmdb.storage.types.exercise.SQLVarchar;
+
+import java.util.ArrayList;
 
 
 public class RowPage extends AbstractPage {
@@ -22,57 +25,83 @@ public class RowPage extends AbstractPage {
 	// existing records, otherwise an in-place update should occur.
 	// Exception is thrown if no space left (same as in insert(AbstractRecord))
 	public void insert(int slotNumber, AbstractRecord record, boolean doInsert) {
-		//TODO: implement this method
+		boolean canFit = this.recordFitsIntoPage(record);
+		if (canFit) {
+			int startOffset = slotNumber * 12;
+			ArrayList<byte[]> arrayList = insertHelper(record);
+			if (!doInsert) {
+
+				AbstractRecord temp = new Record(2);
+				temp.setValue(0, new SQLInteger());
+				temp.setValue(1, new SQLVarchar(10));
+				read(slotNumber, temp);
+
+				int a = record.getVariableLength();
+				int b = temp.getVariableLength();
+
+
+				if (a >= b) {
+					System.arraycopy(arrayList.get(0), offset, this.data, slotNumber*12, arrayList.get(0).length);
+					System.arraycopy(arrayList.get(1), offset, this.data, this.offsetEnd, arrayList.get(1).length);
+				}
+				else {
+					throw new RuntimeException("There is not enough space!");
+				}
+
+			} else {
+				int numRecToShift = numRecords - slotNumber;
+				AbstractRecord insertRec = record;
+				int place = slotNumber;
+				int count = numRecords;
+				AbstractRecord shiftyRec = new Record(2);
+				for (int i = --count; i >= slotNumber; i--) {
+					shiftyRec.setValue(0, new SQLInteger());
+					shiftyRec.setValue(1, new SQLVarchar(10));
+					this.read(i, shiftyRec);
+					offsetEnd -= shiftyRec.getVariableLength();
+					this.offsetEnd -= shiftyRec.getVariableLength();
+					this.insert(i+1, shiftyRec, false);
+				}
+				//this.insert(place, insertRec, true);
+
+				System.arraycopy(arrayList.get(0), 0, this.data, slotNumber*shiftyRec.getFixedLength(), arrayList.get(0).length);
+				System.arraycopy(arrayList.get(1), 0, this.data, this.offsetEnd, arrayList.get(1).length);
+				this.offsetEnd -= record.getVariableLength();
+
+			}
+
+		}else
+			throw new RuntimeException("There is not enough space");
+
 	}
 	
 	@Override
 	// Inserts a record at the end of the current page and updates the slot-size if there is still space left,
 	// otherwise throws an exception
 	public int insert(AbstractRecord record) {
-		//TODO: implement this method
-		boolean canFit = this.recordFitsIntoPage(record);
-		int numberOfAttributes = record.getValues().length;
-		int index = 0;
 
-		byte[] recInt = null;
-		byte[] recVarChar = null;
-		byte[] rec = new byte[12];
-		for (int i = 0; i < numberOfAttributes; i++) {
-			if (record.getValues()[i].getType() == EnumSQLType.SqlInteger) {
-				recInt = record.getValues()[i].serialize();
-				System.arraycopy(recInt, 0, rec, index, recInt.length);
-				index += recInt.length;
-			}
-			else if (record.getValues()[i].getType() == EnumSQLType.SqlVarchar) {
-				recVarChar = record.getValues()[i].serialize();
-				byte[] metaPart1 = new SQLInteger(this.offsetEnd).serialize();
-				System.arraycopy(metaPart1, 0, rec, index, metaPart1.length);
-				index += metaPart1.length;
-				byte[] metaPart2 = new SQLInteger(recVarChar.length).serialize();
-				System.arraycopy(metaPart2, 0, rec, index, metaPart2.length);
-				index += metaPart2.length;
-			}
-			else
-				throw new RuntimeException("not suitable data type");
-		}
+		boolean canFit = this.recordFitsIntoPage(record);
+
 		if (canFit) {
-			System.arraycopy(rec, offset, this.data, 0, rec.length);
-			System.arraycopy(recVarChar, offset, this.data, this.offsetEnd, recVarChar.length);
-			this.offset += 12;
-			this.offsetEnd -= recVarChar.length;
+			ArrayList<byte[]> arrayList = insertHelper(record);
+
+			System.arraycopy(arrayList.get(0), 0, this.data, this.numRecords*12, arrayList.get(0).length);
+			System.arraycopy(arrayList.get(1), 0, this.data, this.offsetEnd, arrayList.get(1).length);
+
+			this.offsetEnd -= arrayList.get(1).length;
 			this.numRecords++;
 		} else
 			throw new RuntimeException("There is not enough space");
 
 
-		return numRecords;
+		return numRecords - 1;
 	}
 
 	@Override
 	// Fills the passed record-reference with values from the Page. (The record-reference specifies the SQL-datatypes).
 	// An Exception is thrown if the specified slot is empty.
 	public void read(int slotNumber, AbstractRecord record){
-		//TODO: implement this method
+
 		SQLInteger sqlInteger;
 		SQLVarchar sqlVarchar;
 		int numberOfAttributes = record.getValues().length;
@@ -102,9 +131,45 @@ public class RowPage extends AbstractPage {
 				byte[] elementVarChar = new byte[varCharSize];
 				System.arraycopy(this.data, varCharBeginAddress, elementVarChar, 0, varCharSize);
 				sqlVarchar.deserialize(elementVarChar);
-				SQLVarchar sv = (SQLVarchar) record.getValues()[i];
-				sv.deserialize(elementVarChar);
+				SQLVarchar sqlVarchar1 = (SQLVarchar) record.getValues()[i];
+				sqlVarchar1.deserialize(elementVarChar);
 			}
 		}
 	}
+
+
+	private ArrayList<byte[]> insertHelper(AbstractRecord record) {
+		ArrayList<byte[]> arrayList = new ArrayList<>();
+
+		int numberOfAttributes = record.getValues().length;
+		int index = 0;
+
+		byte[] recInt = null;
+		byte[] recVarChar = null;
+		byte[] recFixSize = new byte[12];
+		for (int i = 0; i < numberOfAttributes; i++) {
+			if (record.getValues()[i].getType() == EnumSQLType.SqlInteger) {
+				recInt = record.getValues()[i].serialize();
+				System.arraycopy(recInt, 0, recFixSize, index, recInt.length);
+				index += recInt.length;
+			}
+			else if (record.getValues()[i].getType() == EnumSQLType.SqlVarchar) {
+				recVarChar = record.getValues()[i].serialize();
+				byte[] metaPart1 = new SQLInteger(this.offsetEnd).serialize();
+				System.arraycopy(metaPart1, 0, recFixSize, index, metaPart1.length);
+				index += metaPart1.length;
+				byte[] metaPart2 = new SQLInteger(recVarChar.length).serialize();
+				System.arraycopy(metaPart2, 0, recFixSize, index, metaPart2.length);
+				index += metaPart2.length;
+			}
+			else
+				throw new RuntimeException("not suitable data type");
+		}
+		arrayList.add(recFixSize);
+		arrayList.add(recVarChar);
+
+
+		return arrayList;
+	}
+
 }
